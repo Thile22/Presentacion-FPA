@@ -1420,3 +1420,293 @@ body {
     letter-spacing: 5px;
     margin-top: 25px;
 }
+
+/* =====================================
+   ADAPTACIÓN COMPLETA PARA CELULARES
+===================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        height: 100dvh;
+        overflow: hidden;
+    }
+
+    #presentacion {
+        height: 100dvh;
+    }
+
+    .diapositiva {
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: flex-start;
+        padding: 35px 18px 95px;
+    }
+
+    /* PORTADA Y CIERRE */
+
+    .contenido h1,
+    .cierre h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .contenido h2,
+    .cierre h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    .escudo-contenedor {
+        width: 190px;
+        height: 190px;
+        margin-bottom: 25px;
+    }
+
+    .escudo-marco,
+    .onda {
+        width: 125px;
+        height: 125px;
+    }
+
+    .leyenda,
+    .cierre .leyenda {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    /* ENCABEZADOS */
+
+    .pasos-encabezado,
+    .identificacion-encabezado,
+    .recoleccion-encabezado,
+    .analisis-encabezado,
+    .formulario-encabezado,
+    .capacitacion-encabezado,
+    .procesamiento-encabezado,
+    .derivacion-encabezado {
+        margin-bottom: 25px;
+    }
+
+    .pasos-encabezado h2,
+    .identificacion-encabezado h2,
+    .recoleccion-encabezado h2,
+    .analisis-encabezado h2,
+    .formulario-encabezado h2,
+    .capacitacion-encabezado h2,
+    .procesamiento-encabezado h2,
+    .derivacion-encabezado h2 {
+        font-size: 23px;
+        letter-spacing: 1px;
+        line-height: 1.3;
+    }
+
+    /* DIAPOSITIVA 2 */
+
+    .pasos-contenedor {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .paso {
+        min-height: auto;
+        padding: 25px 18px;
+    }
+
+    /* DIAPOSITIVA 3 */
+
+    .identificacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .visual-circulo {
+        width: 190px;
+        height: 190px;
+    }
+
+    .visual-icono {
+        font-size: 45px;
+    }
+
+    .identificacion-bloque {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    /* DIAPOSITIVA 4 */
+
+    .recoleccion-fuentes {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .fuente-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .recoleccion-conector span {
+        transform: rotate(90deg);
+    }
+
+    /* DIAPOSITIVA 5 */
+
+    .analisis-indicadores {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .indicador-card {
+        min-height: auto;
+        padding: 25px 18px;
+    }
+
+    /* DIAPOSITIVA 6 */
+
+    .formulario-contenido {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .formulario-descripcion {
+        text-align: center;
+    }
+
+    .formulario-muestra {
+        padding: 18px;
+    }
+
+    .formulario-muestra-titulo {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* DIAPOSITIVA 7 */
+
+    .capacitacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .capacitacion-circulo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .capacitacion-item {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    /* DIAPOSITIVA 8 */
+
+    .procesamiento-encabezado {
+        margin-bottom: 25px;
+    }
+
+    .procesamiento-flujo {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .procesamiento-paso {
+        min-height: auto;
+        padding: 25px 18px;
+    }
+
+    .flujo-flecha {
+        transform: rotate(90deg);
+        font-size: 28px;
+    }
+
+    .procesamiento-salida {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        margin-top: 25px;
+        padding: 20px;
+    }
+
+    /* DIAPOSITIVA 9 */
+
+    .derivacion-contenido {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .derivacion-origen,
+    .derivacion-destino {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .derivacion-conector {
+        transform: rotate(90deg);
+        padding: 10px;
+    }
+
+    .derivacion-conector span,
+    .conector-linea {
+        display: none;
+    }
+
+    .derivacion-pasos {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* NAVEGACIÓN */
+
+    .navegacion {
+        position: fixed;
+        bottom: 12px;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px;
+        background: rgba(6, 17, 31, 0.95);
+    }
+
+    .navegacion button {
+        width: 42px;
+        height: 42px;
+    }
+
+    #contador {
+        font-size: 12px;
+    }
+
+}
+
+/* =====================================
+   CELULARES MUY PEQUEÑOS
+===================================== */
+
+@media (max-width: 380px) {
+
+    .diapositiva {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .contenido h1,
+    .cierre h1 {
+        font-size: 21px;
+    }
+
+    .pasos-encabezado h2,
+    .identificacion-encabezado h2,
+    .recoleccion-encabezado h2,
+    .analisis-encabezado h2,
+    .formulario-encabezado h2,
+    .capacitacion-encabezado h2,
+    .procesamiento-encabezado h2,
+    .derivacion-encabezado h2 {
+        font-size: 20px;
+    }
+
+}
